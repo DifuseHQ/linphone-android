@@ -122,6 +122,23 @@
                         android:text="@string/assistant_login_linphone" />
 
                     <TextView
+                        android:id="@+id/remote_configuration"
+                        android:enabled="@{viewModel.termsAndPrivacyAccepted}"
+                        android:visibility="@{viewModel.showRemoteProvisioning ? View.VISIBLE : View.GONE}"
+                        android:onClick="@{remoteProvisioningClickListener}"
+                        style="@style/button_font"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_margin="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/assistant_button"
+                        android:textColor="@drawable/assistant_button_text_color"
+                        android:text="@string/assistant_remote_provisioning" />
+
+                    <TextView
                         android:id="@+id/generic_connection"
                         android:enabled="@{viewModel.termsAndPrivacyAccepted}"
                         android:visibility="@{viewModel.showGenericLogin ? View.VISIBLE : View.GONE}"
@@ -138,22 +155,6 @@
                         android:textColor="@drawable/assistant_button_text_color"
                         android:text="@string/assistant_login_generic" />
 
-                    <TextView
-                        android:id="@+id/remote_configuration"
-                        android:enabled="@{viewModel.termsAndPrivacyAccepted}"
-                        android:visibility="@{viewModel.showRemoteProvisioning ? View.VISIBLE : View.GONE}"
-                        android:onClick="@{remoteProvisioningClickListener}"
-                        style="@style/button_font"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:layout_margin="20dp"
-                        android:layout_width="wrap_content"
-                        android:layout_gravity="fill"
-                        android:layout_columnWeight="1"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/assistant_button"
-                        android:textColor="@drawable/assistant_button_text_color"
-                        android:text="@string/assistant_remote_provisioning" />
 
                 </GridLayout>
 

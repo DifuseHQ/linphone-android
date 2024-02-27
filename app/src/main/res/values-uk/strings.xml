@@ -194,7 +194,7 @@
     <string name="assistant_remote_provisioning">Отримати віддалену конфігурацію</string>
     <string name="assistant_ec_calibration">Виконується калібрування ехокомпенсатора</string>
     <string name="assistant_general_terms">умови використання</string>
-    <string name="assistant_read_and_agree_terms">Я приймаю %1$s і %2$s Belledonne Communications</string>
+    <string name="assistant_read_and_agree_terms">Я приймаю %1$s та %2$s від Iridia Solutions</string>
     <string name="assistant_generic_account_warning_continue_button_text">Я розумію</string>
     <string name="assistant_error_username_already_exists">Ім\'я користувача вже використовується</string>
     <string name="assistant_error_username_invalid_characters">Знайдено недійсні символи</string>
@@ -344,11 +344,7 @@
 \n
 \n Якщо ви вже прив’язали свій номер до іншого облікового запису, але бажаєте використовувати цей, просто прив’яжіть його зараз, і ваш номер буде автоматично переміщено до цього облікового запису.</string>
     <string name="assistant_privacy_policy">політика конфіденційності</string>
-    <string name="assistant_generic_account_warning">Деякі функції потребують &appName; облікового запису, як-от групові або тимчасові повідомлення.
-\n
-\n Ці функції приховані, коли ви реєструєтеся за допомогою стороннього облікового запису SIP.
-\n
-\n Щоб включити його в комерційний проект, зв\'яжіться з нами.</string>
+    <string name="assistant_generic_account_warning">&appName;Деякі функції вимагають Difuse PBX, такі як push-сповіщення. Функції подібного типу не будуть добре працювати, якщо ви використовуєте користувацькі SIP-сервери</string>
     <string name="assistant_error_phone_number_invalid_characters">Тільки цифри</string>
     <string name="assistant_error_phone_number_already_exists">Уже існує обліковий запис із цим номером</string>
     <string name="assistant_error_invalid_credentials">Обліковий запис не існує або пароль не збігається</string>

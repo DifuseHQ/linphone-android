@@ -251,7 +251,7 @@
     <string name="assistant_ec_calibration">Калибрира се настройката за заглушаване на ехо</string>
     <string name="assistant_general_terms">общите условия</string>
     <string name="assistant_privacy_policy">политиката за поверителност</string>
-    <string name="assistant_read_and_agree_terms">Приемам %1$ и %2$ на Belledonne Communications</string>
+    <string name="assistant_read_and_agree_terms">Приемам %1$s и %2$s на Iridia Solutions</string>
     <string name="assistant_generic_account_warning_continue_button_text">Разбрах</string>
     <string name="assistant_alternative_way_create_account">Откриване на нов акаунт чрез вашия имейл адрес:</string>
     <string name="assistant_error_phone_number_invalid_characters">Моля въведете само числа тук</string>
@@ -704,11 +704,7 @@
     <string name="assistant_phone_number_link_info_content_already_account">Вашите приятели ще ви открият по-лесно ако свържете телефонен номер с вашия акаунт
 \n
 \nЩе може да видите в вашата адресна книга кой използва &appName; и вашите приятели ще узнаят, че мога да ви се обадят чрез &appName;.</string>
-    <string name="assistant_generic_account_warning">Някои от опциите като групов чат и краткотрайни съобщения изискват &appName; акаунт.
-\n
-\nТези опции са скрити ако се регистрирате със SIP акаунт от друг доставчик.
-\n
-\nМоля свържете се с нас ако смятате да използвате тези опции за комерсиални цели.</string>
+    <string name="assistant_generic_account_warning">&appName;Някои функции изискват Difuse PBX, като например известията за тласък. Функции като тези няма да работят добре, ако използвате персонализирани SIP сървъри</string>
     <string name="assistant_no_push_warning">Изглежда, че вашето устройство не може да получава известия.
 \n
 \nИзвестията са необходими за да откриете нов акаунт чрез това приложение. За да продължите, моля посетете нашата страница:</string>

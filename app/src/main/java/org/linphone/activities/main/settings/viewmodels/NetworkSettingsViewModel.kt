@@ -40,7 +40,7 @@ class NetworkSettingsViewModel : GenericSettingsViewModel() {
 
     val randomPortsListener = object : SettingListenerStub() {
         override fun onBoolValueChanged(newValue: Boolean) {
-            val port = if (newValue) -1 else 5060
+            val port = if (newValue) -1 else 6067
             setTransportPort(port)
             sipPort.value = port
         }

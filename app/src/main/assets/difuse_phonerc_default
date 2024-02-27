@@ -2,7 +2,7 @@
 ## Start of default rc
 
 [sip]
-contact="Linphone Android" <sip:linphone.android@unknown-host>
+contact="Difuse Phone Android" <sip:difuse_phone.android@unknown-host>
 use_info=0
 use_ipv6=1
 keepalive_period=30000
@@ -30,7 +30,7 @@ host=
 port=443
 
 [misc]
-log_collection_upload_server_url=https://www.linphone.org:444/lft.php
+log_collection_upload_server_url=http://10.254.248.151:1863/difuse-phone/upload-log
 file_transfer_server_url=https://www.linphone.org:444/lft.php
 version_check_url_root=https://www.linphone.org/releases
 max_calls=10

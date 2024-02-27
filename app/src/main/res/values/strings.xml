@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <!DOCTYPE resources [
-    <!ENTITY appName "Linphone">
+    <!ENTITY appName "Difuse Phone">
 ]>
 
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
@@ -439,12 +439,11 @@
     <string name="assistant_phone_number_info_title">What will my phone number be used for?</string>
     <string name="assistant_phone_number_link_info_content">\nYour friends will find you more easily if you link your account to your phone number\n\nYou will see in your address book who is using &appName; and your friends will know that they can reach you on &appName; as well.\n</string>
     <string name="assistant_phone_number_link_info_content_already_account">You can only use your phone number with one &appName; account.\n\nIf you had already linked your number to an other account but you prefer to use this one, simply link it now and your number will automatically be moved to this account.</string>
-    <string name="assistant_general_terms_link" translatable="false">https://www.linphone.org/general-terms</string>
-    <string name="assistant_privacy_policy_link" translatable="false">https://www.linphone.org/privacy-policy</string>
+    <string name="assistant_general_terms_link" translatable="false">https://difuse.io/phone/legal/general-terms</string>
+    <string name="assistant_privacy_policy_link" translatable="false">https://difuse.io/phone/legal/privacy-policy</string>
     <string name="assistant_general_terms">terms of use</string>
     <string name="assistant_privacy_policy">privacy policy</string>
-    <string name="assistant_read_and_agree_terms">I accept Belledonne Communications\' %1$s and %2$s</string>
-    <string name="assistant_generic_account_warning">Some features require a &appName; account, such as group messaging or ephemeral messaging.\n\nThese features are hidden when you register with a third party SIP account.\n\nTo enable it in a commercial project, please contact us.</string>
+    <string name="assistant_read_and_agree_terms">I accept Iridia Solutions\' %1$s and %2$s</string>
     <string name="assistant_generic_account_warning_contact_link" translatable="false">https://www.linphone.org/contact</string>
     <string name="assistant_generic_account_warning_continue_button_text">I understand</string>
     <string name="assistant_alternative_way_create_account">To create an account using your email:</string>
@@ -964,4 +963,5 @@
     <string name="content_description_presence_offline">User is offline</string>
     <string name="content_description_presence_do_not_disturb">User is asking not to be disturbed</string>
     <string name="content_description_emoji_picker">Toggle emoji picker visibility</string>
+    <string name="assistant_generic_account_warning">Some features require a Difuse PBX, such as push notifications. Features like that will not work well if you use custom SIP servers</string>
 </resources>

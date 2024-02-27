@@ -147,7 +147,7 @@ class CorePreferences constructor(private val context: Context) {
     var darkMode: Int
         get() {
             if (!darkModeAllowed) return 0
-            return config.getInt("app", "dark_mode", -1)
+            return config.getInt("app", "dark_mode", 0)
         }
         set(value) {
             config.setInt("app", "dark_mode", value)
@@ -264,7 +264,7 @@ class CorePreferences constructor(private val context: Context) {
         }
 
     var publishPresence: Boolean
-        get() = config.getBool("app", "publish_presence", true)
+        get() = config.getBool("app", "publish_presence", false)
         set(value) {
             config.setBool("app", "publish_presence", value)
         }
@@ -278,7 +278,7 @@ class CorePreferences constructor(private val context: Context) {
         }
 
     var acceptEarlyMedia: Boolean
-        get() = config.getBool("sip", "incoming_calls_early_media", false)
+        get() = config.getBool("sip", "incoming_calls_early_media", true)
         set(value) {
             config.setBool("sip", "incoming_calls_early_media", value)
         }
@@ -489,7 +489,7 @@ class CorePreferences constructor(private val context: Context) {
 
     // Will disable chat feature completely
     val disableChat: Boolean
-        get() = config.getBool("app", "disable_chat_feature", false)
+        get() = config.getBool("app", "disable_chat_feature", true)
 
     // Will disable video feature completely
     val disableVideo: Boolean
@@ -534,10 +534,10 @@ class CorePreferences constructor(private val context: Context) {
     /* Default values related */
 
     val defaultDomain: String
-        get() = config.getString("app", "default_domain", "sip.linphone.org")!!
+        get() = config.getString("app", "default_domain", "sip.difuse.io")!!
 
     val defaultRlsUri: String
-        get() = config.getString("sip", "rls_uri", "sips:rls@sip.linphone.org")!!
+        get() = config.getString("sip", "rls_uri", "sips:rls@sip.difuse.io")!!
 
     val debugPopupCode: String
         get() = config.getString("app", "debug_popup_magic", "#1234#")!!
@@ -573,10 +573,10 @@ class CorePreferences constructor(private val context: Context) {
     /* Assistant */
 
     val showCreateAccount: Boolean
-        get() = config.getBool("app", "assistant_create_account", true)
+        get() = config.getBool("app", "assistant_create_account", false)
 
     val showLinphoneLogin: Boolean
-        get() = config.getBool("app", "assistant_linphone_login", true)
+        get() = config.getBool("app", "assistant_linphone_login", false)
 
     val showGenericLogin: Boolean
         get() = config.getBool("app", "assistant_generic_login", true)
@@ -659,7 +659,7 @@ class CorePreferences constructor(private val context: Context) {
         get() = context.filesDir.absolutePath + "/linphonerc"
 
     val linphoneDefaultValuesPath: String
-        get() = context.filesDir.absolutePath + "/assistant_linphone_default_values"
+        get() = context.filesDir.absolutePath + "/assistant_difuse_phone_default_values"
 
     val defaultValuesPath: String
         get() = context.filesDir.absolutePath + "/assistant_default_values"
@@ -680,13 +680,13 @@ class CorePreferences constructor(private val context: Context) {
         get() = context.cacheDir.absolutePath + "/evfs/"
 
     fun copyAssetsFromPackage() {
-        copy("linphonerc_default", configPath)
-        copy("linphonerc_factory", factoryConfigPath, true)
-        copy("assistant_linphone_default_values", linphoneDefaultValuesPath, true)
+        copy("difuse_phonerc_default", configPath)
+        copy("difuse_phonerc_factory", factoryConfigPath, true)
+        copy("assistant_difuse_phone_default_values", linphoneDefaultValuesPath, true)
         copy("assistant_default_values", defaultValuesPath, true)
 
         move(
-            context.filesDir.absolutePath + "/linphone-log-history.db",
+            context.filesDir.absolutePath + "/difuse-log-history.db",
             context.filesDir.absolutePath + "/call-history.db"
         )
         move(

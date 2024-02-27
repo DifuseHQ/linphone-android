@@ -477,12 +477,7 @@
 \n
 \nVedrai nella tua rubrica chi sta utilizzando &appName; ed i tuoi amici sapranno che ti potranno trovare su &appName;.
 \n"</string>
-    <string name="assistant_read_and_agree_terms">Accetto i %1$s and %2$s di Belledonne Communications</string>
-    <string name="assistant_generic_account_warning">Alcune funzioni richiedono un account &appName;, come le chat di gruppo o i messaggi effimeri.
-\n
-\nQueste funzioni verranno nascoste quando ti registri con un SIP account di terze parti.
-\n
-\nPer attivarle a fini commerciali, per favore contattaci.</string>
+    <string name="assistant_read_and_agree_terms">Accetto il %1$s e il %2$s di Iridia Solutions</string>
     <string name="assistant_error_phone_number_already_exists">Un altro account utilizza già questo numero</string>
     <string name="assistant_error_username_too_long">Il nome utente è troppo lungo</string>
     <string name="assistant_error_invalid_international_prefix">Prefisso internazionale errato</string>
@@ -802,6 +797,7 @@
     <string name="conference_schedule_organizer">Organizzatore:</string>
     <string name="conference_admin_set">%s è ora admin</string>
     <string name="call_stats_ip">Famiglia IP:</string>
+    <string name="assistant_generic_account_warning">Alcune funzionalità richiedono un Difuse PBX, come le notifiche push. Funzionalità come queste non funzioneranno bene se si utilizzano server SIP personalizzati</string>
     <string name="assistant_generic_account_warning_continue_button_text">Ho capito</string>
     <string name="assistant_error_invalid_email_address">L\'indirizzo email non è valido</string>
     <string name="advanced_settings_dark_mode_title">Modalità notte</string>
