@@ -179,7 +179,8 @@
                         android:gravity="center"
                         android:paddingTop="10dp"
                         android:paddingBottom="20dp"
-                        android:text="@string/about_weblate_translation" />
+                        android:text="@string/about_weblate_translation"
+                        android:visibility="gone" />
 
                     <View
                         android:layout_width="match_parent"
